@@ -14,6 +14,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class LocationDTO {
+
     private Long id;
 
     @NotNull //bean validation
@@ -25,6 +26,10 @@ public class LocationDTO {
     @NotBlank
     @Size(max = 10)
     private String postalCode;
+
+    @NotBlank
+    @Size(max = 100)
+    private String address;
 
     @NotBlank
     @Size(max = 60)

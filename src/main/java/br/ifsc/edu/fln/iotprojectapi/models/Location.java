@@ -21,6 +21,7 @@ public class Location {
     private float longitude;
     @Column(name = "cep")
     private String postalCode; //postal code == cep
+    private String address;
     private String city;
     private String district;
     @Column(name = "state_name")
